@@ -7,12 +7,8 @@
 * a {
   text-decoration: none;
 }
-* .container {
-  padding-left: 200px;
-  padding-right: 200px;
-  border-bottom: 1px solid #ededee;
-}
-* .container .header {
+
+.header {
   position: relative;
   display: flex;
   align-items: center;
@@ -20,11 +16,14 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-* .container .header .language a {
+.header .language {
+  width: 10%;
+}
+.header .language a {
   font-size: 13px;
   color: #231f20;
 }
-* .container .header .languages {
+.header .languages {
   position: absolute;
   background-color: #fff;
   border: 2px solid #ededed;
@@ -35,32 +34,32 @@
   display: none;
   flex-direction: column;
 }
-* .container .header .languages i {
+.header .languages i {
   color: #ededed;
   position: absolute;
   font-size: 20px;
   top: -14px;
   background-color: #fff;
 }
-* .container .header .languages a {
+.header .languages a {
   color: #231F20;
   font-size: 13px;
   line-height: 16px;
   padding-bottom: 20px;
 }
-* .container .header .first {
+.header .first {
   display: flex;
-  width: 50%;
+  width: 30%;
 }
-* .container .header .first li {
+.header .first li {
   padding: 5px;
   position: relative;
 }
-* .container .header .first li a {
+.header .first li a {
   color: #231f20;
   font-size: 13px;
 }
-* .container .header .first li .first-before::before {
+.header .first li .first-before::before {
   content: "";
   position: absolute;
   width: 80%;
@@ -68,18 +67,15 @@
   background-color: orange;
   bottom: -4px;
 }
-* .container .header .first li li {
+.header .first li li {
   padding: 5px;
   position: relative;
 }
-* .container .header .first li li a {
+.header .first li li a {
   color: #231F20;
   font-size: 13px;
 }
-* .container .header .between-line {
-  padding: 0 0 0 30px;
-}
-* .container .header .between-line::before {
+.header .between-line::before {
   content: "";
   position: absolute;
   top: 15px;
@@ -87,36 +83,36 @@
   width: 1px;
   background-color: #ededed;
 }
-* .container .header .second {
+.header .second {
+  width: 15%;
   cursor: pointer;
 }
-* .container .header .second li form {
+.header .second li form {
   padding: 5px;
-  font-family: P-Nova;
   color: #231F20;
   font-size: 13px;
 }
-* .container .header .second li form img {
-  width: 30%;
+.header .second li form img {
+  width: 12%;
 }
-* .container .header .search {
+.header .search {
   width: 100%;
   position: absolute;
   left: 250px;
   display: none;
   align-items: center;
 }
-* .container .header .search img {
+.header .search img {
   position: absolute;
   top: 11px;
   left: 15px;
   z-index: 1;
 }
-* .container .header .search .search-inp {
+.header .search .search-inp {
   width: 50%;
   position: relative;
 }
-* .container .header .search .search-inp input {
+.header .search .search-inp input {
   background: white;
   border: 1px solid #d7d8d6;
   border-radius: 5px;
@@ -126,7 +122,7 @@
   padding: 10px 10px 10px 35px;
   outline: none;
 }
-* .container .header .search .search-inp i {
+.header .search .search-inp i {
   cursor: pointer;
   position: absolute;
   top: 10px;
@@ -134,12 +130,12 @@
   color: orange;
   font-size: 20px;
 }
-* .container .header .search .search-find {
+.header .search .search-find {
   text-align: center;
   text-transform: uppercase;
   margin-left: 15px;
 }
-* .container .header .search .search-find span {
+.header .search .search-find span {
   font-size: 15px;
   display: inline-block;
   color: #FFF;
@@ -149,25 +145,27 @@
   line-height: 25px;
   background: #F9C20A;
 }
-* .container .header .third {
+.header .third {
   margin-top: -5px;
   margin-bottom: 0px;
   margin-left: 200px;
   display: flex;
 }
-* .container .header .third .f1 .f1-photo {
-  width: 25%;
+.header .third .f1 .fa {
+  display: flex;
 }
-* .container .header .third .f1 span {
+.header .third .f1 .fa span {
+  display: flex;
   padding: 5px;
   color: #5f6369;
   font-size: 13px;
   line-height: 1.5;
 }
-* .container .header .third .f1 span img {
+.header .third .f1 .fa span img {
   width: 10%;
+  margin-left: 5px;
 }
-* .container .header .third .f1 ul {
+.header .third .f1 ul {
   position: absolute;
   right: 300px;
   top: 35px;
@@ -188,7 +186,7 @@
   opacity: 0;
   transform: scaleY(0);
 }
-* .container .header .third .f1 ul span i {
+.header .third .f1 ul span i {
   display: inline;
   color: rgba(0, 0, 0, 0.15);
   position: absolute;
@@ -197,23 +195,23 @@
   left: 130px;
   background-color: white;
 }
-* .container .header .third .f1 ul li {
+.header .third .f1 ul li {
   width: 100%;
   padding: 10px 0px;
 }
-* .container .header .third .f1 ul li a {
+.header .third .f1 ul li a {
   display: flex;
   align-items: center;
   line-height: 15px;
 }
-* .container .header .third .f1 ul li a div {
+.header .third .f1 ul li a div {
   width: 45px;
   height: 45px;
   float: left;
   display: inline-block;
   margin-right: 14px;
 }
-* .container .header .third .f1 ul li a div span {
+.header .third .f1 ul li a div span {
   border: 1px solid #D7D8D6;
   border-radius: 50%;
   width: 45px;
@@ -224,46 +222,49 @@
   align-items: center;
   justify-content: center;
 }
-* .container .header .third .f1 ul li a div span img {
+.header .third .f1 ul li a div span img {
   width: 15px;
 }
-* .container .header .third .f1 ul li a span {
+.header .third .f1 ul li a span {
   line-height: 15px;
 }
-* .container .header .third .f1 ul li a span h3 {
+.header .third .f1 ul li a span h3 {
   font-size: 18px;
   color: #231F20;
   line-height: 100%;
   width: 100%;
 }
-* .container .header .third .f2 {
+.header .third .f2 {
+  margin-right: 20px;
   margin-left: 25px;
 }
-* .container .header .third .f2 a img {
-  width: 15%;
+.header .third .f2 a img {
+  width: 8%;
 }
-* .container .header .third .f2 a span {
+.header .third .f2 a span {
   line-height: 1;
   padding: 5px;
   color: #5F6369;
   font-size: 13px;
 }
-* .container .header .third .f3 {
+.header .third .f3 {
   margin-left: -30px;
 }
-* .container .header .third .f3 a .f3-photo {
-  width: 10%;
+.header .third .f3 a {
+  display: flex;
 }
-* .container .header .third .f3 a span {
+.header .third .f3 a span {
+  display: flex;
   line-height: 1;
   padding: 5px;
   color: #5f6369;
   font-size: 13px;
 }
-* .container .header .third .f3 a span img {
+.header .third .f3 a span img {
   width: 10%;
+  margin-left: 5px;
 }
-* .container .header .third .f3 ul {
+.header .third .f3 ul {
   position: absolute;
   top: 39px;
   right: 45px;
@@ -284,7 +285,7 @@
   margin-top: 2px;
   transform: scaleY(0);
 }
-* .container .header .third .f3 ul span i {
+.header .third .f3 ul span i {
   display: inline;
   color: rgba(0, 0, 0, 0.15);
   position: absolute;
@@ -293,22 +294,22 @@
   left: 150px;
   background-color: white;
 }
-* .container .header .third .f3 ul li {
+.header .third .f3 ul li {
   padding: 5px 0;
 }
-* .container .header .third .f3 ul li a {
+.header .third .f3 ul li a {
   display: flex;
   align-items: center;
   line-height: 15px;
 }
-* .container .header .third .f3 ul li a div {
+.header .third .f3 ul li a div {
   width: 45px;
   height: 45px;
   float: left;
   display: inline-block;
   margin-right: 10px;
 }
-* .container .header .third .f3 ul li a div span {
+.header .third .f3 ul li a div span {
   border: 1px solid #d7D8D6;
   width: 45px;
   height: 45px;
@@ -319,13 +320,13 @@
   justify-content: center;
   border-radius: 50%;
 }
-* .container .header .third .f3 ul li a div span img {
+.header .third .f3 ul li a div span img {
   width: 15px;
 }
-* .container .header .third .f3 ul li a span {
+.header .third .f3 ul li a span {
   color: #5f6369;
 }
-* .container .header .third .f3 ul li a span h3 {
+.header .third .f3 ul li a span h3 {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0.03em;
@@ -333,20 +334,20 @@
   text-transform: none;
   width: 100%;
 }
-* .container .header .third .f3 ul li a span h5 {
+.header .third .f3 ul li a span h5 {
   line-height: 100%;
   color: #5F6369;
   text-transform: none;
   margin-top: 6px;
   font-size: 13px;
 }
-* .container .header .third .f4 {
+.header .third .f4 {
   margin-left: 25px;
 }
-* .container .header .third .f4 a img {
+.header .third .f4 a img {
   width: 30%;
 }
-* .container .header .third .f4 a span {
+.header .third .f4 a span {
   line-height: 1;
   color: #5F6369;
   font-size: 13px;
