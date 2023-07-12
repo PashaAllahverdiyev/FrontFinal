@@ -20,6 +20,7 @@
 }
 .header .language {
   width: 10%;
+  cursor: pointer;
 }
 .header .language a {
   font-size: 13px;
@@ -53,6 +54,7 @@
   display: flex;
   width: 30%;
   margin-top: 0px;
+  cursor: pointer;
 }
 .header .first li {
   padding: 5px;
@@ -114,6 +116,7 @@
 .header .search .search-inp {
   width: 50%;
   position: relative;
+  padding: 130px;
 }
 .header .search .search-inp input {
   background: white;
@@ -399,16 +402,16 @@
   display: flex;
   font-size: 13px;
   line-height: 25px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: #231f20;
 }
 .second-head nav .second-head-right ul .sf1 a img {
-  width: 50%;
-  padding-right: 5px;
+  width: 10%;
+  padding-right: 10px;
 }
 .second-head nav .second-head-right ul .sf1 ul {
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 300px;
+  min-width: 200px;
   padding: 20px 20px 20px 20px;
   position: absolute;
   top: 100px;
@@ -442,25 +445,25 @@
   margin-left: 0px;
 }
 .second-head nav .second-head-right ul .sf1 ul li div .text {
-  width: 35%;
+  width: 85%;
   display: inline-block;
   float: left;
 }
 .second-head nav .second-head-right ul .sf1 ul li div .text h3 {
-  font-size: 10px;
+  font-size: 20px;
   line-height: 70%;
   letter-spacing: 13px;
   color: #231f20;
 }
 .second-head nav .second-head-right ul .sf1 ul li div .text p {
   font-size: 13px;
-  line-height: 130%;
+  line-height: 150%;
   letter-spacing: 3px;
 }
 .second-head nav .second-head-right ul .sf1 ul li div .text div {
   padding-right: 50px;
   position: relative;
-  margin-top: 8px;
+  margin-top: 15px;
 }
 .second-head nav .second-head-right ul .sf1 ul li div .text div p {
   font-size: 13px;
@@ -474,6 +477,8 @@
   top: 5px;
   right: 0;
   width: 20%;
+  vertical-align: middle;
+  border-style: none;
 }
 .second-head nav .second-head-right ul .sf2 {
   width: 50%;
@@ -497,7 +502,7 @@
   justify-content: space-between;
   margin-top: 5px;
 }
-.slide .container-slide .slides .left-icon {
+.slide .container-slide .slides .right-icon {
   cursor: pointer;
   position: absolute;
   top: 25px;
@@ -511,7 +516,7 @@
   display: flex;
   justify-content: center;
 }
-.slide .container-slide .slides .right-icon {
+.slide .container-slide .slides .left-icon {
   cursor: pointer;
   position: absolute;
   top: 25px;
@@ -579,7 +584,7 @@
 }
 .slide .container-slide .slides .text2-slide {
   width: 50%;
-  padding-top: 100px;
+  padding-top: 20px;
   margin-bottom: -5px;
   margin-left: 100px;
   display: none;
@@ -676,14 +681,15 @@
 }
 .body .container-slide .tab-menues .all-news .news {
   flex-direction: column;
+  overflow: hidden;
 }
-.body .container-slide .tab-menues .all-news .news .card {
+.body .container-slide .tab-menues .all-news .news .cardd {
   min-height: 300px;
   background: transparent;
   padding: 0px 50px;
   display: flex;
 }
-.body .container-slide .tab-menues .all-news .news .card .txt {
+.body .container-slide .tab-menues .all-news .news .cardd .txt {
   min-height: 300px;
   border-radius: 8px;
   background: white;
@@ -692,18 +698,18 @@
   height: 100%;
   margin-top: 0px;
   position: relative;
-  flex: 0 0 33.3333333333;
+  flex: 0 0 33.333333%;
   max-width: 50%;
   padding: 30px 30px 30px 30px;
 }
-.body .container-slide .tab-menues .all-news .news .card .txt h5 {
+.body .container-slide .tab-menues .all-news .news .cardd .txt h5 {
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 3px;
   color: #231F20;
   margin-top: 0px;
 }
-.body .container-slide .tab-menues .all-news .news .card .txt div {
+.body .container-slide .tab-menues .all-news .news .cardd .txt div {
   letter-spacing: 3px;
   color: #5F6369;
   font-size: 18px;
@@ -737,4 +743,1603 @@
 }
 .body .container-slide .tab-menues .all-news .news .btnn a:hover {
   background: #F58220;
+}
+.body .container-slide .tab-menues .tab-card-all {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+.body .container-slide .tab-menues .tab-card-all .tab-card {
+  margin-right: 10px;
+  margin-left: 4px;
+  position: relative;
+  border-radius: 8px;
+  background: #FFF;
+  min-height: 400px;
+  flex: 0 0 25%;
+  max-width: 23%;
+  padding: 0px 15px;
+}
+.body .container-slide .tab-menues .tab-card-all .tab-card .card-img {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: transparent;
+  display: block;
+  text-align: center;
+}
+.body .container-slide .tab-menues .tab-card-all .tab-card .card-img img {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+.body .container-slide .tab-menues .tab-card-all .tab-card .card-content {
+  margin-top: 200px;
+  font-family: P-Nova;
+}
+.body .container-slide .tab-menues .tab-card-all .tab-card .card-content h4 {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5F6369;
+  padding: 6px 12px;
+  border: 1px solid #D7D8D6;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.body .container-slide .tab-menues .tab-card-all .tab-card .card-content h3 {
+  line-height: 120%;
+  margin-top: 20px;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  margin-left: 20px;
+}
+.body .container-slide .tab-menues .tab-card-all .tab-card .card-content a {
+  display: inline-block;
+  margin-left: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 16px 90px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 0.2s;
+  background-color: #f5f5f5;
+  color: #231F20;
+}
+.body .container-slide .tab-menues .tab-card-all .tab-card .card-content a:hover {
+  background-color: #F58220;
+}
+
+.calc .container-calc {
+  padding: 200px 100px;
+}
+.calc .container-calc .calc-buttons .calc-btn {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #D7D8D6;
+  padding-top: 25px;
+}
+.calc .container-calc .calc-buttons .calc-btn button {
+  position: relative;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0px;
+  transition: 0.3s;
+  color: #5F6369;
+  margin-right: 45px;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+.calc .container-calc .calc-buttons .calc-btn .calc-bttn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  bottom: 0px;
+  z-index: 111111;
+}
+.calc .container-calc .bank-calcs {
+  margin: 20px 0px;
+  background-color: #fff;
+}
+.calc .container-calc .bank-calcs h4 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin: 20px 0;
+}
+.calc .container-calc .bank-calcs .b-clck {
+  border: 1px solid #ededed;
+  display: flex;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 8px #ededed;
+}
+.calc .container-calc .bank-calcs .b-clck .inps {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  margin: 40px;
+}
+.calc .container-calc .bank-calcs .b-clck .inps h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  margin-bottom: 45px;
+  margin-left: 20px;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp {
+  margin: 10px;
+  position: relative;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp .inptext {
+  width: 150%;
+  border-radius: 15px;
+  border: 1px solid #ededed;
+  padding: 25px 30px;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp .linex {
+  position: absolute;
+  width: 87%;
+  left: 10px;
+  bottom: 0px;
+  height: 2px;
+  background-color: #FAA61A;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp .select {
+  width: 8%;
+  border: none;
+  position: absolute;
+  top: 35px;
+  right: -120px;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp .range {
+  position: absolute;
+  top: 73px;
+  left: 9px;
+  -webkit-appearance: none;
+  outline: none;
+  width: 140%;
+  height: 4px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e2e2e2;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  cursor: pointer;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp div {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #5F6369;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp .value, .calc .container-calc .bank-calcs .b-clck .inps .inp .value1, .calc .container-calc .bank-calcs .b-clck .inps .inp .value2 {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  font-size: 20px;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp .manat {
+  position: absolute;
+  top: 30px;
+  right: -110px;
+}
+.calc .container-calc .bank-calcs .b-clck .inps .inp .manat::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #F58220;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-line {
+  margin: 45px 250px;
+  width: 0.1%;
+  height: 100;
+  background-color: #ededed;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-show {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: -200px;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-show .bank-show-head h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  margin-bottom: 45px;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-show .bank-show-azn {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  padding: 0px 150px 0px 0px;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-show .bank-show-azn span {
+  font-size: 20px;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-show .bank-show-azn p {
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  color: #5F6369;
+  display: block;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-show .bank-show-go {
+  margin-top: 50px;
+  width: 100%;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-show .bank-show-go a {
+  text-align: center;
+  padding: 15px 0px;
+  display: inline-block;
+  width: 120%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #231F20;
+  background: #F9C20A;
+  margin: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.calc .container-calc .bank-calcs .b-clck .bank-show .bank-show-go a:hover {
+  background: #FAA61A;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil {
+  border: 1px solid #ededed;
+  display: flex;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 8px #ededed;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  margin: 40px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  margin-bottom: 45px;
+  margin-left: 20px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp {
+  margin: 10px;
+  position: relative;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .inptext {
+  width: 150%;
+  border-radius: 15px;
+  border: 1px solid #ededed;
+  padding: 25px 30px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .linex {
+  position: absolute;
+  width: 140%;
+  left: 10px;
+  bottom: 0px;
+  height: 2px;
+  background-color: #FAA61A;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .select {
+  width: 137%;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 40px;
+  right: -120px;
+  font-size: 20px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .select option {
+  font-weight: bold;
+  margin-top: 50px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .range {
+  position: absolute;
+  top: 73px;
+  left: 9px;
+  -webkit-appearance: none;
+  outline: none;
+  width: 140%;
+  height: 4px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e2e2e2;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  cursor: pointer;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .range1 {
+  position: absolute;
+  top: 73px;
+  left: 9px;
+  -webkit-appearance: none;
+  outline: none;
+  width: 140%;
+  height: 4px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e2e2e2;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .range1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp div {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  font-family: P-Nova;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #5F6369;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .values, .calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .value6, .calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .value7 {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  font-family: P-Nova;
+  font-size: 20px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .manat {
+  position: absolute;
+  top: 30px;
+  right: -110px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .all-inp .inp .manat::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #F58220;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .bank-line {
+  margin: 45px 250px;
+  width: 0.1%;
+  height: 100;
+  background-color: #ededed;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .bank-show {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: -200px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .bank-show .bank-show-head h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  margin-bottom: 45px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .bank-show .bank-show-manat {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  padding: 0px 150px 0px 0px;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .bank-show .bank-show-manat p {
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  color: #5F6369;
+  display: block;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .bank-show .bank-show-go {
+  margin-top: 50px;
+  width: 100%;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .bank-show .bank-show-go a {
+  text-align: center;
+  padding: 15px 0px;
+  display: inline-block;
+  width: 120%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #231F20;
+  background: #F9C20A;
+  margin: 0;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.calc .container-calc .bank-calcs .bank-calc-qizil .bank-show .bank-show-go a:hover {
+  background: #FAA61A;
+}
+
+.last {
+  margin: 120px 0px 10px;
+  background-image: url(https://www.expressbank.az/img/24bg.png);
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.last .container-last .last-part {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.last .container-last .last-part .last-photo {
+  position: absolute;
+  top: -27px;
+  left: 100px;
+}
+.last .container-last .last-part .last-photo img {
+  width: 70%;
+}
+.last .container-last .last-part .last-text {
+  display: flex;
+  flex-direction: column;
+  margin: 62px 50px 0px auto;
+}
+.last .container-last .last-part .last-text h3 {
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  color: white;
+}
+.last .container-last .last-part .last-text .p1 {
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: white;
+  margin-top: 30px;
+}
+.last .container-last .last-part .last-text .p2 {
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: white;
+}
+.last .container-last .last-part .last-qr {
+  width: 15%;
+  padding: 40px 0px;
+  margin-right: 80px;
+}
+.last .container-last .last-part .last-qr img {
+  width: 100%;
+}
+
+footer {
+  overflow: hidden;
+  align-items: center;
+}
+footer .first-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 25px 0px;
+}
+footer .first-footer .phone span {
+  font-size: 18px;
+}
+footer .first-footer .location {
+  width: 35%;
+  position: relative;
+  padding: 0px 0 0 25px;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 3px;
+  color: #231F20;
+}
+footer .first-footer .location img {
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 6%;
+}
+footer .first-footer .social-media {
+  padding-bottom: 45px;
+}
+footer .first-footer .social-media ul {
+  display: flex;
+}
+footer .first-footer .social-media ul li {
+  margin-left: 14px;
+  margin-top: 15px;
+}
+footer .first-footer .social-media ul li a {
+  border-radius: 50%;
+  background: #F5F5F5;
+  width: 46px;
+  height: 46px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+footer .first-footer .social-media ul li a img {
+  vertical-align: middle;
+  border-style: none;
+}
+footer .container-footer .information {
+  display: flex;
+  padding: 50px;
+}
+footer .container-footer .information div {
+  padding: 50px;
+  max-width: 100%;
+  width: 100%;
+}
+footer .container-footer .information div h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 3px;
+  color: #F58220;
+  margin-left: 30px;
+}
+footer .container-footer .information div ul {
+  margin-top: 20px;
+}
+footer .container-footer .information div ul li a {
+  font-size: 18px;
+  line-height: 240%;
+  letter-spacing: 0.06em;
+  color: #5F6369;
+}
+footer .last-line {
+  border: 1px solid #ededed;
+  margin: 10px;
+}
+footer .second-footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .second-footer .footer-icon {
+  width: 60%;
+}
+footer .second-footer .footer-icon ul {
+  display: flex;
+}
+footer .second-footer .footer-icon ul li {
+  padding: 0px 10px;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon1 {
+  width: 9%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon1 img {
+  width: 100%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon2 {
+  width: 10%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon2 img {
+  width: 100%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon3 {
+  width: 6%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon3 img {
+  width: 100%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon4 {
+  width: 9%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon4 img {
+  width: 100%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon5 {
+  width: 7%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon5 img {
+  width: 100%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon6 {
+  width: 8%;
+}
+footer .second-footer .footer-icon ul .footer-icon-icon6 img {
+  width: 100%;
+}
+
+.credits .credit-important {
+  background-image: url(https://www.expressbank.az/img/24bg.png);
+  background-size: cover;
+  height: 25vh;
+}
+.credits .credit-important .credit-text h3 {
+  padding: 20px 150px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: #231F20;
+  color: #fff;
+}
+.credits .credit-important .credit-text p {
+  padding: 20px 150px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 0px;
+  max-width: 700px;
+  margin-top: 10px;
+  color: #fff;
+}
+.credits .all-credits {
+  background-color: #f5f5f5;
+}
+.credits .all-credits .card-important {
+  padding-top: 25px;
+}
+.credits .all-credits .card-important .card-btns {
+  border-bottom: 1px solid #d7d8d6;
+}
+.credits .all-credits .card-important .card-btns button {
+  padding: 10px 0px;
+  font-size: 16px;
+  color: #5f6369;
+  margin-right: 45px;
+  letter-spacing: 3px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.credits .all-credits .card-important .card-btns .active {
+  position: relative;
+}
+.credits .all-credits .card-important .card-btns .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+.credits .credit-all .inf-credit1 .inf-photos {
+  background-color: #fff;
+  padding: 3px 20px 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-photo1 {
+  position: absolute;
+  top: -25px;
+  width: 30%;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-photo1 img {
+  width: 88%;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text {
+  margin-left: 400px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text h4 {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 3px;
+  color: #231F20;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 22px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text .little-texts ul {
+  display: flex;
+  position: relative;
+  margin-left: -26px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text .little-texts ul li {
+  padding: 0px 39px 0px 0px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text .little-texts ul li h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  font-style: normal;
+  letter-spacing: 3px;
+  color: #231F20;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text .little-texts ul li p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 24px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text .little-texts ul .between-line {
+  padding: 0px 20px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text .little-texts ul .between-line::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  height: 44px;
+  width: 1px;
+  background-color: #a4a4a4;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text ul {
+  display: flex;
+  margin-left: -30px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text ul .card-a2 {
+  margin-right: 16px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text ul .card-a2 a {
+  color: #5F6369;
+  background-color: #FFF;
+  border: 1px solid #D7D8D6;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #231F20;
+  padding: 16px 24px;
+  border-radius: 8px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text ul .card-a1 {
+  margin-right: 16px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text ul .card-a1 a {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 16px 24px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #231F20;
+  transition: background 0.2s;
+  background-color: #F9C20A;
+  border-radius: 10px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-text ul .card-a1 a:hover {
+  background-color: #F58220;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-photo2 {
+  position: absolute;
+  width: 30%;
+  top: -29px;
+  left: 90px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-photo2 img {
+  width: 68%;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-photo3 {
+  position: absolute;
+  width: 30%;
+  top: -29px;
+  left: 90px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-photo3 img {
+  width: 68%;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-photo4 {
+  position: absolute;
+  width: 30%;
+  top: -29px;
+  left: 90px;
+}
+.credits .credit-all .inf-credit1 .inf-photos .inf-photo4 img {
+  width: 68%;
+}
+.credits .last-credit {
+  padding: 60px 0px 60px;
+  text-align: center;
+}
+.credits .last-credit .last-textt form {
+  padding: 18px 0px;
+  width: 20%;
+  display: inline-block;
+}
+.credits .last-credit .last-textt form h3 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+.credits .last-credit .last-textt form .credit-phone {
+  display: inline-block;
+  max-width: 500px;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 150%;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 30px;
+}
+.credits .last-credit .last-textt form .cr-name {
+  padding: 2px 0px;
+  margin: 10px;
+}
+.credits .last-credit .last-textt form .cr-name input {
+  background: white;
+  border: 1px solid #D7D8D6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  height: 70px;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  padding: 0px 22px;
+}
+.credits .last-credit .last-textt form button {
+  padding-top: 15px;
+  border-radius: 8px;
+  padding-bottom: 16px;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  -webkit-transition: background 0.2s;
+  display: inline-block;
+  transition: background 0.2s;
+  background: #F9C20A;
+  border: 0;
+  color: #231F20;
+  width: 100%;
+}
+.credits .last-credit .last-textt form button:hover {
+  background: #F58220;
+}
+
+.cards .card-important {
+  background-image: url(https://www.expressbank.az/img/24bg.png);
+  background-size: cover;
+}
+.cards .card-important .card-text h3 {
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  color: #fff;
+}
+.cards .card-important .card-text p {
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.06em;
+  color: #5F6369;
+  margin-bottom: 0px;
+  max-width: 650px;
+  margin-top: 10px;
+  color: #fff;
+}
+.cards .real-card {
+  background-color: #f5f5f5;
+}
+.cards .real-card .debet-cards {
+  padding-top: 25px;
+}
+.cards .real-card .debet-cards .card-btns {
+  border: 1px solid #d7d8d6;
+}
+.cards .real-card .debet-cards .card-btns button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0px;
+  transition: 0.3s;
+  color: #5F6369;
+  margin-right: 48px;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+}
+.cards .real-card .debet-cards .card-btns .active {
+  position: relative;
+}
+.cards .real-card .debet-cards .card-btns .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos {
+  background-color: #fff;
+  padding: 3px 20px 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo1 {
+  position: absolute;
+  top: -25px;
+  width: 30%;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo1 img {
+  width: 88%;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text {
+  margin-left: 400px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text h4 {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 3px;
+  color: #231F20;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 22px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text .little-texts ul {
+  display: flex;
+  position: relative;
+  margin-left: -26px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text .little-texts ul li {
+  padding: 0px 39px 0px 0px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text .little-texts ul li h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  font-style: normal;
+  letter-spacing: 3px;
+  color: #231F20;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text .little-texts ul li p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 24px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text .little-texts ul .between-line {
+  padding: 0px 20px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text .little-texts ul .between-line::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  height: 44px;
+  width: 1px;
+  background-color: #a4a4a4;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text ul {
+  display: flex;
+  margin-left: -30px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text ul .card-a2 {
+  margin-right: 16px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text ul .card-a2 a {
+  color: #5F6369;
+  background-color: #FFF;
+  border: 1px solid #D7D8D6;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #231F20;
+  padding: 16px 24px;
+  border-radius: 8px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text ul .card-a1 {
+  margin-right: 16px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text ul .card-a1 a {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 16px 24px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #231F20;
+  transition: background 0.2s;
+  background-color: #F9C20A;
+  border-radius: 10px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text ul .card-a1 a:hover {
+  background-color: #F58220;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo2 {
+  position: absolute;
+  width: 30%;
+  top: -29px;
+  left: 90px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo2 img {
+  width: 68%;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo3 {
+  position: absolute;
+  width: 30%;
+  top: -29px;
+  left: 90px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo3 img {
+  width: 68%;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo4 {
+  position: absolute;
+  width: 30%;
+  top: -29px;
+  left: 90px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo4 img {
+  width: 68%;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo5 {
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  width: 30%;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-photo5 img {
+  width: 88%;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 {
+  margin-left: 100px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 h4 {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 3px;
+  color: #231F20;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 22px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 .little-texts ul {
+  display: flex;
+  position: relative;
+  margin-left: -26px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 .little-texts ul li {
+  padding: 0px 39px 0px 0px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 .little-texts ul li h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  font-style: normal;
+  letter-spacing: 3px;
+  color: #231F20;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 .little-texts ul li p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 120%;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 24px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 .little-texts ul .between-line {
+  padding: 0px 20px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 .little-texts ul .between-line::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  height: 44px;
+  width: 1px;
+  background-color: #a4a4a4;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 ul {
+  display: flex;
+  margin-left: -30px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 ul .card-a2 {
+  margin-right: 16px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 ul .card-a2 a {
+  color: #5F6369;
+  background-color: #FFF;
+  border: 1px solid #D7D8D6;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #231F20;
+  padding: 16px 24px;
+  border-radius: 8px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 ul .card-a1 {
+  margin-right: 16px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 ul .card-a1 a {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 16px 24px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #231F20;
+  transition: background 0.2s;
+  background-color: #F9C20A;
+  border-radius: 10px;
+}
+.cards .real-card .inf-card .info-card1 .inf-photos .inf-text1 ul .card-a1 a:hover {
+  background-color: #F58220;
+}
+.cards .last-card {
+  padding: 60px 0px 60px;
+  text-align: center;
+}
+.cards .last-card .last-textt form {
+  padding: 18px 0px;
+  width: 20%;
+  display: inline-block;
+}
+.cards .last-card .last-textt form h3 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+.cards .last-card .last-textt form .credit-phone {
+  display: inline-block;
+  max-width: 500px;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 150%;
+  letter-spacing: 3px;
+  color: #5F6369;
+  margin-bottom: 30px;
+}
+.cards .last-card .last-textt form .cr-name {
+  padding: 2px 0px;
+  margin: 10px;
+}
+.cards .last-card .last-textt form .cr-name input {
+  background: white;
+  border: 1px solid #D7D8D6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  height: 70px;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  padding: 0px 22px;
+}
+.cards .last-card .last-textt form button {
+  padding-top: 15px;
+  border-radius: 8px;
+  padding-bottom: 16px;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  -webkit-transition: background 0.2s;
+  display: inline-block;
+  transition: background 0.2s;
+  background: #F9C20A;
+  border: 0;
+  color: #231F20;
+  width: 100%;
+}
+.cards .last-card .last-textt form button:hover {
+  background: #F58220;
+}
+
+.about-general {
+  overflow: hidden;
+}
+.about-general .about-all .about-important {
+  background-image: url(https://www.expressbank.az/img/24bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-general .about-all .about-important div {
+  padding-top: 70px;
+}
+.about-general .about-all .about-important div ul {
+  display: flex;
+  margin-left: -20px;
+}
+.about-general .about-all .about-important div ul li {
+  display: inline-block;
+  margin-right: 16px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.about-general .about-all .about-important h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 46px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  margin: 0px 0 0px 0;
+  max-width: 700px;
+  margin-bottom: 0 !important;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.about-general .about-all .about-boxes {
+  background-color: #f5f5f5;
+  padding: 10px 250px 10px 230px;
+}
+.about-general .about-all .about-boxes .about-box {
+  margin: 30px 0px;
+}
+.about-general .about-all .about-boxes .about-box ul {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 80px;
+  align-items: center;
+}
+.about-general .about-all .about-boxes .about-box ul li h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 3px;
+  color: #231F20;
+  margin-left: 100px;
+}
+.about-general .about-all .about-boxes .about-box ul li a {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #231F20;
+  border-radius: 8px;
+  padding: 12px 30px;
+  margin-left: 750px;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  transition: background 0.2s;
+  background: #F9C20A;
+  color: #231F20;
+}
+.about-general .about-all .about-boxes .about-box .box1 li h4 {
+  width: 100%;
+}
+.about-general .about-all .about-boxes .about-box .box1 li a {
+  margin-left: 430px;
+}
+.about-general .about-all .about-boxes .about-box .box2 li h4 {
+  margin-left: 60px;
+}
+.about-general .about-all .about-boxes .about-box .box2 li a {
+  margin-left: 370px;
+}
+.about-general .about-all .about-boxes .about-box .box3 li h4 {
+  margin-left: 80px;
+}
+.about-general .about-all .about-boxes .about-box .box3 li a {
+  margin-left: 425px;
+}
+.about-general .about-all .about-boxes .about-box .box4 li h4 {
+  width: 180%;
+  margin-left: 75px;
+}
+.about-general .about-all .about-boxes .about-box .box4 li a {
+  margin-left: 365px;
+}
+.about-general .about-all .about-boxes .about-box .box5 {
+  padding: 25px 0px;
+}
+.about-general .about-all .about-boxes .about-box .box5 li img {
+  width: 70%;
+  margin-left: 80px;
+}
+.about-general .about-all .about-boxes .about-box .box5 li h4 {
+  width: 100%;
+  margin-left: 90px;
+}
+.about-general .about-all .about-boxes .about-box .box5 li a {
+  margin-left: 330px;
+}
+.about-general .about-all .about-boxes .about-box .box6 li h4 {
+  margin-left: 110px;
+}
+.about-general .about-all .about-boxes .about-box .box6 li a {
+  margin-left: 410px;
+}
+.about-general .about-all .about-boxes .about-box .box7 h4 {
+  width: 130%;
+  margin-left: 80px;
+}
+.about-general .about-all .about-boxes .about-box .box7 a {
+  margin-left: 400px;
+}
+
+.onlines {
+  background-color: #f6f6f6;
+}
+.onlines .online-all {
+  margin-top: 35px;
+}
+.onlines .online-all .online-header {
+  display: flex;
+  justify-content: space-between;
+}
+.onlines .online-all .online-header .on-text {
+  font-size: 13px;
+  font-weight: 700;
+}
+.onlines .on-choose {
+  border-bottom: 1px solid #e4e4e8;
+  display: flex;
+}
+.onlines .on-choose div {
+  padding: 15px 10px 5px 0px;
+}
+.onlines .on-choose div h1 {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #a4a4a4;
+}
+.onlines .on-choose .on-choose1 h1 {
+  color: #ffc533;
+  position: relative;
+}
+.onlines .on-choose .on-choose1 h1::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffc533;
+}
+.onlines .on-search {
+  display: flex;
+  margin: 15px 0px;
+}
+.onlines .on-search .inp-search {
+  width: 75%;
+  position: relative;
+}
+.onlines .on-search .inp-search input {
+  padding: 10px 0px 10px 35px;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #5f6369;
+}
+.onlines .on-search .inp-search i {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  color: #5F6369;
+  font-size: 13px;
+}
+.onlines .on-search .search-btn {
+  margin-top: 2px;
+  margin-left: 25px;
+  width: 25%;
+}
+.onlines .on-search .search-btn button {
+  width: 50%;
+  padding: 9px;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+}
+.onlines .on-search .search-btn .bttn2 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: -5px;
+  transition: 0.1s;
+}
+.onlines .on-search .search-btn .bttn2:hover {
+  color: #fff;
+  background-color: #5f6369;
+}
+.onlines .on-search .search-btn .bttn1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+  background-color: #5f6369;
+}
+.onlines .online-card {
+  margin-top: 20px;
+  width: 100%;
+  padding: 8px 0rem 8px;
+  border: 1px solid #d3d2d2;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.onlines .online-card .region {
+  border-bottom: 1px solid #ededed;
+}
+.onlines .online-card .region h3 {
+  padding-left: 15px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.onlines .online-card .online-map {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+  padding: 5px 10px 10px 5px;
+}
+.onlines .online-card .online-map a {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  box-shadow: -1.5px 2px 5px 0px #d1cece;
+}
+.onlines .online-card .online-map a i {
+  transform: rotate(45deg);
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+}
+.onlines .online-card .online-map a span {
+  margin-top: 10px;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: #000;
+}
+.onlines .online-card .card-adress {
+  padding: 10px 0px 0px;
+  margin: 0 1.5rem;
+  border-bottom: 1px solid #ededed;
+}
+.onlines .online-card .card-adress p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #5f6369;
+}
+.onlines .online-card .card-time {
+  padding: 10px 0px 0px;
+  margin: 0 15px;
+}
+.onlines .online-card .card-time p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #5f6369;
+}
+.onlines .online-card .on-btn {
+  padding: 1rem 1rem 0rem 1rem;
+}
+.onlines .online-card .on-btn button {
+  border: none;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  text-align: center;
+  background-color: #ffc533;
+  color: #000;
+  transition: 0.3s;
+}
+.onlines .online-card .on-btn button:hover {
+  background-color: #241d46;
+  color: #fff;
 }/*# sourceMappingURL=stlyle.css.map */
