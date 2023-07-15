@@ -176,49 +176,4 @@ window.onscroll = function(){
   }, 2000);
 
 
-  let crd_btn = document.querySelector('.all-credits .card-btns button')
-   for(let bt of crd_btn){
-    bt.onclick = () => {
-        let act = document.querySelector('.active')
-        act.classList.remove('active');
-        bt.classList.add('active')
-
-        let id = bt.id
-        let div = document.querySelectorAll('.credit-all .inf-credit1')
-    
-             for(let dv of div){
-               
-                if(dv.id===id){
-                    dv.classList.remove('d-none')
-                }else{
-                    dv.classList.add('d-none')
-    
-                }
-             }
-    }
-   }
-
-
-
-
-
-   let card_btn = document.querySelectorAll('.real-card .card-btns button')
-   for(let bttn of card_btn ){
-    bttn.onclick = () => {
-        let activ = document.querySelector('.active')
-        activ.classList.remove('active')
-        bttn.classList.add('active')
-
-        let id = bttn.id
-        let x = document.querySelectorAll('.inf-card .info-card1')
-
-        for(let y of x){
-            if(y.id === id){
-                y.classList.remove('d-none')
-            }else{
-                y.classList.add('d-none')
-            }
-        }
-    }
-   }
   
